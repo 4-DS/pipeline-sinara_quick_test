@@ -1,30 +1,28 @@
-# step_template
+# How to run anomalib test
+1. Clone this repo inside sinara-cv:latest container
+2. Go to sinara_quick_test/anomalib folder
+3. Execute command in jupyter terminal
 
-Prerequisites
+    ```
+    bash test_anomalib.sh
+    ```
+# How to run mmcv + mmdetection test
+1. Clone this repo inside sinara-cv:latest container
+2. Go to sinara_quick_test/mmcv folder
+3. Execute command in jupyter terminal
 
-- Sinara is successfully deployed as said in https://github.com/4-DS/sinara-ext-tools.git
+    ```
+    prepare_mmcv_mmdet.sh
+    ```
+    Environment will be prepared to run tests
+4. Go to /home/jovyan/work/mmdetection/demo folder<br>
+6. Run notebook
 
-# Step repository naming conventions
+# How to run pytorch lightning test
+1. Clone this repo inside sinara-cv:latest container
+2. Go to sinara_quick_test folder
+3. Execute command in jupyter terminal
 
-We will recommend forming the git repo name as: <%pipeline_name>-<%step_name>
-
-But this is not a mandatory requirement. And our library should work under any layouts with naming
-
-The authoritative source of the pipeline and step names will now be exclusively in configs, and will not be tightly tied to the names of folders and git repositories
-
-
-Make the following to create your Sinara step:
-
-1. Create empty git repo with https://github.com/<%organization_name>/<%pipeline_name>-<%step_name>.git 
-2. Clone the dsml component template repository
-- cd work
-- git clone --recurse-submodules https://github.com/4-DS/step_template.git {my_step}
-3. Change dsml component remote origin
-- cd {my_step}
-- git remote set-url origin https://github.com/<%organization_name>/<%pipeline_name>-<%step_name>.git
-4. Squash dsml component template commits
-- cd {my_step}
-- git reset $(git commit-tree HEAD^{tree} -m "a new Sinara step")
-5. Push dsml component template to new origin
-- git push
-6. See the examples for details: https://github.com/4-DS/sinara-ext-tools.git
+    ```
+    python pytorch_lightning_test.py
+    ```
