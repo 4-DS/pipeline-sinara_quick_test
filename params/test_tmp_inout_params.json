@@ -1,0 +1,25 @@
+{
+    "pipeline_params":
+    {
+        "env_name":"user",
+        "pipeline_name":"pipeline",
+        "zone_name":"zone",
+        "X": "something"
+    },
+    "step_params":
+    {
+        "Y": "something_else",
+        "step_name": "test_tmp_inout"
+    },
+    "substeps_params":
+    [
+        {
+            "substep_name":"test_tmp_inout_1.ipynb",
+            "substep_params": {}
+        },
+        {
+            "substep_name":"test_tmp_inout_2.ipynb",
+            "substep_params": {}
+        }
+    ]
+}
