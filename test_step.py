@@ -2,7 +2,7 @@ from sinara.step import Step
 from sinara.step import StepSafeguard as sg
 from sinara.step import StepReport as sr
 
-sg.step_is_in_dir("**/work2/**")
+sg.step_is_in_dir("**/work/**")
 sg.step_is_in_branch(["main","ver*"])
 sg.git_reset()
 
