@@ -9,7 +9,7 @@
     "step_params":
     {
         "Y": "something_else",
-        "step_name": "step_template"
+        "step_name": "sinara_quick_test"
     },
     "substeps_params":
     [
