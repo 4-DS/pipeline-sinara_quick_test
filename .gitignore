@@ -10,6 +10,7 @@ tmp
 !/params/pipeline_params.json
 !/params/test_bentoservice_params.json
 !/params/test_tmp_inout_params.json
+!/params/test_step_params.json
 /readme_files/.ipynb_checkpoints/*
 **/__pycache__/*
 **/.ipynb_checkpoints/*

@@ -1,0 +1,25 @@
+{
+    "pipeline_params":
+    {
+        "env_name":"user",
+        "pipeline_name":"pipeline",
+        "zone_name":"zone",
+        "X": "something"
+    },
+    "step_params":
+    {
+        "Y": "something_else",
+        "step_name": "step_template"
+    },
+    "substeps_params":
+    [
+        {
+            "substep_name":"substep_full.ipynb",
+            "substep_params":
+            {
+                "param1":"None1",
+                "param2":"None2"
+            }
+        }
+    ]
+}
