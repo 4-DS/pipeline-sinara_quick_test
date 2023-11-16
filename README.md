@@ -12,11 +12,9 @@
 3. Execute command in jupyter terminal
 
     ```
-    prepare_mmcv_mmdet.sh
+    bash test_mmcv.sh
     ```
-    Environment will be prepared to run tests
-4. Go to /home/jovyan/work/mmdetection/demo folder<br>
-6. Run notebook
+4. Results will be palced to /home/jovyan/work/mmdetection/output folder
 
 # How to run pytorch lightning test
 1. Clone this repo inside sinara-cv:latest container
