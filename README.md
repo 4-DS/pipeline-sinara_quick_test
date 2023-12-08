@@ -24,12 +24,12 @@
     ```
     python pytorch_lightning_test.py
     ```
-    
+ 
 # How to run step test
 !!! Be careful, this test will lose all unsaved work !!!
 1. Clone this repo inside sinara-notebook:latest container
 2. Go to sinara_quick_test folder
-3. Run **Init_Data_sinara_quick_test.ipynb**
+3. Run **do_load_data.ipynb**
 4. Execute command in jupyter terminal
 
     ```

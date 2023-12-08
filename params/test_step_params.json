@@ -8,13 +8,12 @@
     },
     "step_params":
     {
-        "Y": "something_else",
-        "step_name": "sinara_quick_test"
+        "Y": "something_else"
     },
     "substeps_params":
     [
         {
-            "substep_name":"substep_full.ipynb",
+            "substep_name":"do_step.ipynb",
             "substep_params":
             {
                 "param1":"None1",
