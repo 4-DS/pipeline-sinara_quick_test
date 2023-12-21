@@ -2,7 +2,7 @@ import bentoml
 from bentoml.adapters import JsonInput
 from bentoml.adapters import DataframeInput
 from bentoml.frameworks.sklearn import SklearnModelArtifact
-from sinara.bentoml_artifacts.binary_artifact import BinaryFileArtifact
+from sinara.bentoservice.binary_artifact import BinaryFileArtifact
 
 @bentoml.env(infer_pip_packages=True)
 @bentoml.artifacts([
