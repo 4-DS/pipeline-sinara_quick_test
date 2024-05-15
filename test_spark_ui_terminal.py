@@ -1,6 +1,5 @@
 from sinara.step import Step
 from sinara.step import StepSafeguard as sg
-from sinara.step import StepReport as sr
 
 try:
     step = Step(step_params_file_globs="params/test_spark_ui_terminal.json",
@@ -10,5 +9,4 @@ try:
 except Exception as e:
     step.handle_exception(e)
 finally:
-    sr.save()
     step.handle_exit()
