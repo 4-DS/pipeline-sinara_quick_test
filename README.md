@@ -15,3 +15,4 @@
 1. [Anomalib smoke test](./test_anomalib_smoke.md)
 2. [MMCV and MMdetection smoke test](./test_mmcv_mmdet_smoke.md)
 3. [Pytorch lightning smoke test](./test_pytorch_lightning_smoke.md)
+4. [NVidia CUDNN libraries test](./test_torch_cudnn_libinfer.md)
