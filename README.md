@@ -9,7 +9,7 @@
 8. [Spark UI URL test (interactive and job mode](./test_spark_ui_terminal.md)] [🔴 FAILING]
 9. [Tmp entity write](./test_tmp_entity.ipynb) [🔴 FAILING]
 10. [Tmp entity archive/dearchive with SinaraStore](./test_tmp_files_to_store.ipynb) [🔴 FAILING]
-11. [Tmp entity pass between substeps](./test_tmp_files_to_store.ipynb)
+11. [Tmp entity pass between substeps](./test_tmp_inout.md)
 
 ### CV specific tests
 1. [Anomalib smoke test](./test_anomalib_smoke.md)
