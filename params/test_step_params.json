@@ -13,7 +13,7 @@
     "substeps_params":
     [
         {
-            "substep_name":"do_step.ipynb",
+            "substep_name":"test_step.ipynb",
             "substep_params":
             {
                 "param1":"None1",

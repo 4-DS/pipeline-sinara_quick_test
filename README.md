@@ -1,94 +1,17 @@
-# How to run anomalib test
-1. Clone this repo inside sinara-cv:latest container
-2. Go to sinara_quick_test/anomalib folder
-3. Execute command in jupyter terminal
+### Sinara library and component templates tests
+1. [SinaraLib Safeguard test](./test_diff_report.md)
+2. [Step test](./test_step_test.md)
+3. [SinaraArchive pack/unpack test](./test_sinara_archive.md)
+4. [SinaraArchive performance test](./test_sinara_archive_perf.md) [🔴 FAILING]
+5. [BentoService archive (BentoArchive) test](./test_bentoservice_archive.md)
+6. [BentoService save_bentoartifact_to_tmp() test](./test_bentoservice_save_to_tmp.md)
+7. [Spark autodetect schema](./spark_autodetect_schema.ipynb) [🔴 FAILING]
+8. [Spark UI URL test (interactive and job mode](./test_spark_ui_terminal.md)] [🔴 FAILING]
+9. [Tmp entity write](./test_tmp_entity.ipynb) [🔴 FAILING]
+10. [Tmp entity archive/dearchive with SinaraStore](./test_tmp_files_to_store.ipynb) [🔴 FAILING]
+11. [Tmp entity pass between substeps](./test_tmp_files_to_store.ipynb)
 
-    ```
-    bash test_anomalib.sh
-    ```
-# How to run mmcv + mmdetection test
-1. Clone this repo inside sinara-cv:latest container
-2. Go to sinara_quick_test/mmcv folder
-3. Execute command in jupyter terminal
-
-    ```
-    bash test_mmcv.sh
-    ```
-4. Results will be palced to /home/jovyan/work/mmdetection/output folder
-
-# How to run pytorch lightning test
-1. Clone this repo inside sinara-cv:latest container
-2. Go to sinara_quick_test folder
-3. Execute command in jupyter terminal
-
-    ```
-    python pytorch_lightning_test.py
-    ```
- 
-# How to run step test
-!!! Be careful, this test will lose all unsaved work !!!
-1. Clone this repo inside sinara-notebook:latest container
-2. Go to sinara_quick_test folder
-3. Run **do_load_data.ipynb**
-4. Execute command in jupyter terminal
-
-    ```
-    python test_step.py
-    ```
-
-# How to run test diff report
-1. Clone this repo inside sinara-notebook:latest container
-2. Go to sinara_quick_test folder
-3. Ensure that **dev** branch in sinara_quick_test exists
-
-    ```
-    git checkout dev
-    git checkout main
-    ```
-    
-4. Execute command in jupyter terminal
-
-    ```
-    python test_diff_report.py
-    ```
-
-## Successful test run example
-
-Diff report creating:
-
-        CURRENT BRANCH: dev
-        CURRENT COMMIT: dc1037ab4a990adbce1d52eceb8dadffc98d07c3
-        CURRENT RUN: run-23-11-19-075525
-        CURRENT RUN PATH: /data/home/jovyan/pipeline/zone/sinara_quick_test/run-23-11-19-075525
-
-        TARGET BRANCH: main
-        TARGET COMMIT: c42656b56911b5c805ffc7fd6cee4540a7b8f519
-        TARGET RUN: run-23-11-17-135458
-        TARGET RUN PATH: /data/home/jovyan/pipeline/zone/sinara_quick_test/run-23-11-17-135458
-
-        Preparing tmp diff report inside of '/home/jovyan/work/sinara_quick_test/tmp/diff.run-23-11-19-075525.run-23-11-17-135458':
-        Copying tmp diff report to 'hdfs:///data/home/jovyan/pipeline/zone/sinara_quick_test/run-23-11-19-075525/diff.run-23-11-19-075525.run-23-11-17-135458'
-        Tagging current commit by DIFF TAG...
-        DIFF TAG: diff.run-23-11-19-075525.run-23-11-17-135458
-        Diff report created
-
-## Known-issues.
-
-In case of 
-stderr: 'fatal: tag 'diff.run-23-11-19-075525.run-23-11-17-135458' already exists'
-
-please, issue:
-
-```
-git tag -d diff.run-23-11-19-075525.run-23-11-17-135458
-git push --delete origin diff.run-23-11-19-075525.run-23-11-17-135458
-```
-
-In case of
-
-        Preparing tmp diff report inside of '/home/jovyan/work/sinara_quick_test/tmp/diff.run-23-11-19-075525.run-23-11-17-135458':
-local diff report wasn't created due to it already exists
-
-```
-rm -rf /home/jovyan/work/sinara_quick_test/tmp/diff.run-23-11-19-075525.run-23-11-17-135458
-```
+### CV specific tests
+1. [Anomalib smoke test](./test_anomalib_smoke.md)
+2. [MMCV and MMdetection smoke test](./test_mmcv_mmdet_smoke.md)
+3. [Pytorch lightning smoke test](./test_pytorch_lightning_smoke.md)
