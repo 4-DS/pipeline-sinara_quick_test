@@ -3,6 +3,7 @@ from bentoml.adapters import JsonInput
 from bentoml.adapters import DataframeInput
 from bentoml.frameworks.sklearn import SklearnModelArtifact
 from sinara.bentoservice.binary_artifact import BinaryFileArtifact
+import catboost
 
 @bentoml.env(infer_pip_packages=True)
 @bentoml.artifacts([
