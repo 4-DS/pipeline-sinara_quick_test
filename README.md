@@ -10,6 +10,7 @@
 9. [Tmp entity write](./test_tmp_entity.ipynb) [🔴 FAILING]
 10. [Tmp entity archive/dearchive with SinaraStore](./test_tmp_files_to_store.ipynb) [🔴 FAILING]
 11. [Tmp entity pass between substeps](./test_tmp_inout.md)
+12. [Step user api test](./test_step_user_api_test.md)
 
 ### CV specific tests
 1. [Anomalib smoke test](./test_anomalib_smoke.md)
