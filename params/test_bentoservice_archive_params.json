@@ -1,0 +1,25 @@
+{
+    "pipeline_params":
+    {
+        "env_name":"user",
+        "pipeline_name":"pipeline",
+        "zone_name":"zone",
+        "X": "something"
+    },
+    "step_params":
+    {
+        "Y": "something_else",
+        "step_name": "test_bentoservice_archive"
+    },
+    "substeps_params":
+    [
+        {
+            "substep_name":"test_bentoservice_archive_1.ipynb",
+            "substep_params": {}
+        },
+        {
+            "substep_name":"test_bentoservice_archive_2.ipynb",
+            "substep_params": {}
+        }
+    ]
+}

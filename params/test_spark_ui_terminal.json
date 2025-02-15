@@ -1,0 +1,21 @@
+{
+    "pipeline_params":
+    {
+        "env_name":"user",
+        "pipeline_name":"pipeline",
+        "zone_name":"zone",
+        "X": "something"
+    },
+    "step_params":
+    {
+    },
+    "substeps_params":
+    [
+        {
+            "substep_name":"test_spark_ui_terminal.ipynb",
+            "substep_params":
+            {
+            }
+        }
+    ]
+}
